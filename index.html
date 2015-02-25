@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Ben's Flexin' Chord Progression Maker</title>
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/scales.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	</head>
+	<body>
+		<div id="scaler">
+			
+		<div id="controls">
+			Key:
+			<select id="key"></select>
+			Type:
+			<select id="minmaj">
+				<option value="major">Major</option>
+				<option value="minor">Minor</option>
+			</select>
+			Comp:
+			<select id="triad">
+				<option value="default">Default</option>
+				<option value="7">7th</option>
+			</select>
+			Scale:
+			<select id="scale_select">
+				<option value="bebop_major">Bebop Major</option>
+				<option value="bebop_minor">Bebop Minor</option>
+				<option value="pmaj">Pentatonic Major</option>
+				<option value="pm">Pentatonic Minor</option>
+				<option value="pb">Pentatonic Blues</option>
+				<option value="dorian">Dorian</option>
+				<option value="mixo">Mixolydian</option>
+				<option value="hm">Harmonic Minor</option>
+				<option value="mm">Melodic Minor</option>
+				
+			</select>
+			<span id="bassify" onclick="bassify();" style="width:100px;background-color:#900;color:#FFF;padding:3px;border-radius:5px;cursor:pointer;box-shadow:0 0 10px #0C0C0C;font-size:9pt;margin-left:10px;border: 1px solid #030303">
+				Bassify!
+			</span>
+		</div>
+		<div class="tray" id="key_chord_tray" style="top:40px;left:10px;height:230px;width:1395px">
+			
+		</div>
+		<div class="tray" id="prog_tray" style="top:280px;left:10px;height:230px;width:1395px">
+
+		</div>
+		<div class="tray" id="scale_tray" style="top:520px;left:244px;height:210px;width:965px">
+
+		</div>
+		<div class="tray" style="bottom:10px;right:10px;padding: 4px 4px; font-size:7pt; border-radius:5px">
+			By: Benjamin Bales
+		</div>
+		<div style="z-index:4;position:absolute;top:5px;left:10px;color:AEAEAE;padding: 4px 4px; font-size:14pt; border-radius:5px;text-shadow:0 0 8px #000">
+			Flexin' Guitar Chord and Scale Arranger
+		</div>
+		<!--
+		<div class="chord"><div id="name"><div class="frets"><div class="b0">0</div><div class="b1">1</div><div class="b2">2</div><div class="b3">3</div></div><div class="s5"><div class="b0">▥</div><div class="b1"></div><div class="b2"></div><div class="b3"></div></div><div class="s4"><div class="b0">▥</div><div class="b1"></div><div class="b2"></div><div class="b3"></div></div><div class="s3"><div class="b0">▥</div><div class="b1">◉</div><div class="b2"></div><div class="b3"></div></div><div class="s2"><div class="b0">▥</div><div class="b1"></div><div class="b2">◉</div><div class="b3"></div></div><div class="s1"><div class="b0">▥</div><div class="b1"></div><div class="b2"></div><div class="b3"></div></div><div class="s0"><div class="b0">▥</div><div class="b1"></div><div class="b2"></div><div class="b3">◉</div></div></div></div> -->
+		
+		<div id="fretboard">
+			
+		</div>
+		
+		</div>
+		
+	</body>
+</html>
